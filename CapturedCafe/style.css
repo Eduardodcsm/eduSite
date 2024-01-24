@@ -182,7 +182,7 @@ footer {
   opacity: 0.7;
 }
 /* Message show up in the home page in of a image */
-.Header2::after {
+/*.Header2::after {
   content:"Welcome to our website! Explore our active pages: Home, Gallery, About Us, and Contact Us. Please ensure the Contact Us form is filled out accurately to send your message.";
   position: absolute;
   top: 50%;
@@ -192,7 +192,7 @@ footer {
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 5px;
-}
+} */
 
 /* Style for the coffee image */
 .coffee-image {
