@@ -1,1 +1,1 @@
-
+pathOut = '/editedImgs'
