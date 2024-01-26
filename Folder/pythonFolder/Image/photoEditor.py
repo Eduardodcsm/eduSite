@@ -2,8 +2,8 @@ from PIL import Image, ImageEnhance, ImageFilter
 import os
 
 # Use an absolute path
-path = r'eduSite\pythonFolder\Image\imgs'
-pathOut = r'eduSite\pythonFolder\Image\editedImgs'
+path = r'eduSite\Folder\pythonFolder\Image\imgs'
+pathOut = r'eduSite\Folder\pythonFolder\Image\editedImgs'
 
 for filename in os.listdir(path):
     img = Image.open(os.path.join(path, filename))
