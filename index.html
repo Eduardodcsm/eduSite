@@ -9,10 +9,9 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static_files', filename='style.css') }}"
+      href="style.css"
     />
-    <script src="{{ url_for('static_files', filename='script.js') }}"></script>
-  </head>
+   </head>
 
   <body>
     <!-- Explanation for the "CapturedCafe" button -->
@@ -47,8 +46,5 @@
 
     <!-- Information Display Area -->
     <div id="infoDisplay"></div>
-
-    <!-- Linking the external script file -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
