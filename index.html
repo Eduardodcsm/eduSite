@@ -1,65 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo's Portfolio</title>
-  <!-- Linking the external style file -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>Eduardo's Portfolio</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo's Portfolio</title>
+    <!-- Linking the external style file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Eduardo's Portfolio</h1>
+    </header>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#main">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <!-- Add more navigation links as needed -->
-    </ul>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <button class="btn" onclick="location.href='Priviteweb/home.html'">
+          Eduardo
+        </button>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </nav>
 
-  <!-- Main Content -->
-  <main id="main">
-    <h2>Welcome to My Portfolio</h2>
+    <!-- Main Content -->
+    <main id="main">
+      <h2>Welcome to My Portfolio</h2>
 
-    <p>
-      Site created to showcase my progress.
-    </p>
+      <p>Site created to showcase my progress.</p>
 
-    <h3>Web development</h3>
-    <p>
-      This website was created as an assignment where the goal is to create a commercial website with a theme. The company's business was photography, and the theme is coffee.
-    </p>
-    <button class="btn" onclick="location.href='CapturedCafe/home.html'">
-      Visit CapturedCafe Website
-    </button>
-  </main>
+      <h3>Web development</h3>
+      <p>
+        This website was created as an assignment where the goal is to create a
+        commercial website with a theme. The company's business was photography,
+        and the theme is coffee.
+      </p>
+      <button class="btn" onclick="location.href='CapturedCafe/home.html'">
+        Visit CapturedCafe Website
+      </button>
 
-  <!-- Section Content -->
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ul>
-      <li onclick="showInfo('HTML')">HTML</li>
-      <li onclick="showInfo('JavaScript')">JavaScript</li>
-      <li onclick="showInfo('CSS')">CSS</li>
-      <li onclick="showInfo('Github')">Github</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
+      <!-- Section Content -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li onclick="showInfo('HTML')">HTML</li>
+          <li onclick="showInfo('JavaScript')">JavaScript</li>
+          <li onclick="showInfo('CSS')">CSS</li>
+          <li onclick="showInfo('Github')">Github</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
 
-  <!-- Information Display Area -->
-  <div id="infoDisplay"></div>
+      <!-- Information Display Area -->
+      <div id="infoDisplay"></div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
-  </footer>
+      <h3>Python</h3>
+      <p>
+        This website was created as an assignment where the goal is to create a
+        commercial website with a theme. The company's business was photography,
+        and the theme is coffee.
+      </p>
+      <button class="btn" onclick="location.href='CapturedCafe/home.html'">
+        Python
+      </button>
 
-  <!-- Linking the external JavaScript file -->
-  <script src="script.js"></script>
-</body>
+      <!-- Section Content -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li onclick="showInfo('HTML')">Python</li>
+          <li onclick="showInfo('JavaScript')">Flask</li>
+          <li onclick="showInfo('CSS')">CSS</li>
+          <li onclick="showInfo('Github')">Github</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
+
+      <!-- Information Display Area -->
+      <div id="infoDisplay"></div>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
