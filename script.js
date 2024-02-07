@@ -1,5 +1,5 @@
 // script.js
-
+// Function to show the content of skills
 function showInfo(skill) {
   var infoDisplay = document.getElementById('infoDisplay');
   infoDisplay.innerHTML = '';
@@ -18,3 +18,6 @@ function showInfo(skill) {
   // Add CSS class to the infoDisplay element
   infoDisplay.classList.add('infoDisplayStyle');
 }
+
+
+ 
