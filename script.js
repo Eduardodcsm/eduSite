@@ -14,6 +14,9 @@ function showInfo(skill) {
     case 'CSS':
       infoDisplay.innerHTML = "Was applied for styling and layout, enhancing the visual appeal of the website.";
       break;
+    case 'Github':
+      infoDisplay.innerHTML = "Used to host the website, version control and documentation.";
+      break;
   }
   // Add CSS class to the infoDisplay element
   infoDisplay.classList.add('infoDisplayStyle');
