@@ -1,50 +1,54 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eduardo's Portfolio</title>
-    <!-- Linking the external script and style files -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="style.css"
-    />
-   </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo's Portfolio</title>
+  <!-- Linking the external style file -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+    <h2>Eduardo's Portfolio</h2>
+  </header>
+  <nav class="navbar"></nav>
+  <main></main>
+  <aside></aside>
+  <section></section>
+  <article></article>
+  <div></div>
+  
+  <p>
+    This website showcases my skills in web design, dedicated to
+    "CapturedCafe." Explore the HTML, JavaScript, and CSS code on the hosted
+    GitHub pages. Click the button below to visit the website:
+  </p>
+  
+  <button class="btn" onclick="location.href='CapturedCafe/home.html'">
+    Visit CapturedCafe Website
+  </button>
+  
+  <!-- List of Learning and Practicing Skills -->
+  <h2>Learning and Practicing Skills:</h2>
+  <ul>
+    <li onclick="showInfo('HTML')">HTML</li>
+    <li onclick="showInfo('JavaScript')">JavaScript</li>
+    <li onclick="showInfo('CSS')">CSS</li>
+    <!-- Add more skills as needed -->
+  </ul>
+  
+  <!-- Information Display Area -->
+  <div id="infoDisplay"></div>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar"></nav>
 
-  <body>
-    <!-- Explanation for the "CapturedCafe" button -->
-    <p>
-      This website showcases my skills in web design, dedicated to
-      "CapturedCafe." Explore the HTML, JavaScript, and CSS code on the hosted
-      GitHub pages. Click the button below to visit the website:
-    </p>
+  <!-- Linking the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
 
-    <button class="btn" onclick="location.href='CapturedCafe/home.html'">
-      VisitCapturedCafeWebsite
-    </button>
-
-    <!-- New Button for Python Program -->
-    <button class="btn" onclick="location.href='/new_python_program'">
-      New Python Program
-    </button>
-
-    <!-- New Button to execute GUIbox.py -->
-    <button class="btn" onclick="location.href='/GUIbox.py'">
-      Execute GUIbox.py
-    </button>
-
-    <!-- List of Learning and Practicing Skills -->
-    <h2>Learning and Practicing Skills:</h2>
-    <ul>
-      <li onclick="showInfo('HTML')">HTML</li>
-      <li onclick="showInfo('JavaScript')">JavaScript</li>
-      <li onclick="showInfo('CSS')">CSS</li>
-      <!-- Add more skills as needed -->
-    </ul>
-
-    <!-- Information Display Area -->
-    <div id="infoDisplay"></div>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
+  </footer>
 </html>

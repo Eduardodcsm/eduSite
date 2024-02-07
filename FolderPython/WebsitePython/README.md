@@ -9,6 +9,9 @@ git clone <repo-url>
 ```
 
 ```bash
+pip install flask
+pip install flask-login
+pip install flask-sqlalchemy
 pip install -r requirements.txt
 ```
 
