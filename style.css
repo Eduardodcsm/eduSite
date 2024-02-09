@@ -1,4 +1,4 @@
-/* General Styles */
+/* #General Styles  */
 body {
   margin: 10px;
   font-family: Arial, sans-serif;
@@ -11,8 +11,8 @@ header {
 }
 
 .navbar {
-  background-color: #292b95;
-  height: 10px;
+  background-color: #bfbfd9;
+  height: 50px;
 }
 
 button.btn {
@@ -71,7 +71,7 @@ footer {
   margin-top: 30px;
 }
 
-/* Styles for Desktop */
+#Styles for Desktop 
 header,
 nav,
 main,
