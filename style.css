@@ -1,23 +1,24 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* Use a more modern font */
 }
 
 /* Header */
 header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
   text-align: center;
   padding: 25px;
 }
 
 .site-header {
   color: #333;
+  font-size: 24px; /* Increase font size for emphasis */
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: #333;
+  background-color: #333; /* Dark background color */
   padding: 10px 20px;
 }
 
@@ -39,15 +40,15 @@ header {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fff; /* White text color */
   font-size: 16px;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 .navbar ul li a:hover {
-  background-color: #555;
+  background-color: #555; /* Darker background color on hover */
 }
 
 /* Button style */
@@ -68,23 +69,20 @@ button.btn:hover {
 }
 
 /* Skills Sections */
-#python-skills,
-#web-dev-skills {
+.skills-section {
   margin-top: 30px;
 }
 
-#python-skills ul li,
-#web-dev-skills ul li {
+.skills-section ul li {
   cursor: pointer;
-  padding: 5px;
+  padding: 8px 15px; /* Adjust padding for better spacing */
   border-radius: 5px;
   background-color: #007bff;
   color: #fff;
   margin-bottom: 5px;
 }
 
-#python-skills ul li:hover,
-#web-dev-skills ul li:hover {
+.skills-section ul li:hover {
   background-color: #0056b3;
 }
 
@@ -107,33 +105,6 @@ button.btn:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-
-/* Background Video */
-#background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#background-video video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Ensure all other content appears above the video */
-header, .navbar, main, footer {
-  position: relative;
-  z-index: 1;
-}
-
 /* Footer */
 footer {
   background-color: #3498db;
@@ -142,4 +113,16 @@ footer {
   text-align: center;
   font-size: 16px;
   margin-top: auto;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#background-video video {
+  object-fit: cover;
 }
