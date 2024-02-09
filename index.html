@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio" />
-  <meta name="author" content="Eduardo" />
-  <title>Eduardo's Portfolio</title>
-  <!-- Linking the external style file -->
-  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Eduardo" />
+    <title>Eduardo's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        EDUARDO'S PORTFOLIO
+        <a
+          class="bi-list offcanvas-icon"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasMenu"
+          role="button"
+          aria-controls="offcanvasMenu"
+        ></a>
+      </div>
+    </header>
 
-  <!-- Linking the external bootstrap file -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
 
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <header class="site-header">
-      EDUARDO'S PORTIFOLIO
-      <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
-      
-  </header>
+    <!-- Background Video -->
+    <div id="background-video">
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="eduSite\Priviteweb\videos\video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#main">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a onclick="location.href='Priviteweb/index.html'">Eduardo</a></li>
-      <!-- Add more navigation links as needed -->
-    </ul>
-  </nav>
-  
-  <!-- Main Content -->
-  <main id="main">
-    <h2>Welcome to My Portfolio</h2>
+    <!-- Main Content -->
+    <main id="main">
+      <h2>Welcome to My Portfolio</h2>
       <p>Site created to showcase my progress.</p>
 
-    <h3>Python</h3>
-      <p>
-      
-      </p>
-    <button class="btn" onclick="location.href='CapturedCafe/home.html'">Python</button>
-  
-    <!-- Python Skills Section -->
-    <section id="python-skills">
-      <h2>Skills</h2>
-      <ul>
-        <li onclick="showInfo('Python')">Python</li>
-        <li onclick="showInfo('Flask')">Flask</li>
-        <li onclick="showInfo('CSS')">CSS</li>
-        <li onclick="showInfo('Github')">Github</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
-  
-    <!-- Information Display Area for Python Skills -->
-    <div id="python-infoDisplay"></div>
-  </main>
-    
-    <h3>Web development</h3>
-    <p>
-      This website was created as an assignment where the goal is to create a
-      commercial website with a theme. The company's business was photography,
-      and the theme is coffee.
-    </p>
-    <button class="btn" onclick="location.href='CapturedCafe/home.html'">Visit CapturedCafe Website</button>
+      <!-- Python Skills Section -->
+      <section id="python-skills" class="skills-section">
+        <h3>Python</h3>
+        <ul>
+          <li onclick="showInfo('Python')">Python</li>
+          <li onclick="showInfo('Flask')">Flask</li>
+        </ul>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li onclick="showInfo('HTML')">HTML</li>
-        <li onclick="showInfo('JavaScript')">JavaScript</li>
-        <li onclick="showInfo('CSS')">CSS</li>
-        <li onclick="showInfo('Github')">Github</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
+      <!-- Information Display Area for Python -->
+      <div id="python-infoDisplay" class="infoDisplay"></div>
 
-    <!-- Information Display Area -->
-    <div id="infoDisplay"></div>
+      <!-- Web Development Skills Section -->
+      <section id="web-dev-skills" class="skills-section">
+        <h3>Web Development</h3>
+        <p>
+          This website was created as an assignment where the goal is to create
+          a commercial website with a theme. The company's business was
+          photography, and the theme is coffee.
+        </p>
+        <button class="btn" onclick="location.href='CapturedCafe/home.html'">
+          Visit CapturedCafe Website
+        </button>
+        <ul>
+          <li onclick="showInfo('HTML')">HTML</li>
+          <li onclick="showInfo('JavaScript')">JavaScript</li>
+          <li onclick="showInfo('CSS')">CSS</li>
+          <li onclick="showInfo('Github')">Github</li>
+        </ul>
 
+        <!-- Information Display Area for Web Development -->
+        <div id="web-dev-infoDisplay" class="infoDisplay"></div>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
+    </footer>
 
-  <!-- Linking the external JavaScript file -->
-  <script src="script.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/init.js"></script>
+  </body>
 </html>

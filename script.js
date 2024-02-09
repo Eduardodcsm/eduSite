@@ -1,26 +1,32 @@
-// script.js
-// Function to show the content of skills
-function showInfo(skill) {
-  var infoDisplay = document.getElementById('infoDisplay');
-  infoDisplay.innerHTML = '';
+ // Function to show the content of skills
+ function showInfo(skill) {
+  var pythonInfoDisplay = document.getElementById("python-infoDisplay");
+  var webDevInfoDisplay = document.getElementById("web-dev-infoDisplay");
 
   switch (skill) {
-    case 'HTML':
-      infoDisplay.innerHTML = "Was used to create and structure the content of the website. Seated 4 pages using HTML.";
-      break;
-    case 'JavaScript':
-      infoDisplay.innerHTML = "Was used to enable functionalities in the contact form and gallery, allowing the user to toggle the photographs.";
-      break;
-    case 'CSS':
-      infoDisplay.innerHTML = "Was applied for styling and layout, enhancing the visual appeal of the website.";
-      break;
-    case 'Github':
-      infoDisplay.innerHTML = "Used to host the website, version control and documentation.";
-      break;
+      case "Python":
+          pythonInfoDisplay.innerHTML = "Python information goes here.";
+          webDevInfoDisplay.innerHTML = "";
+          break;
+      case "Flask":
+          pythonInfoDisplay.innerHTML = "Flask information goes here.";
+          webDevInfoDisplay.innerHTML = "";
+          break;
+      case "HTML":
+          pythonInfoDisplay.innerHTML = "teste";
+          webDevInfoDisplay.innerHTML = "Was used to create and structure the content of the website. Seated 4 pages using HTML.";
+          break;
+      case "JavaScript":
+          pythonInfoDisplay.innerHTML = "";
+          webDevInfoDisplay.innerHTML = "Was used to enable functionalities in the contact form and gallery, allowing the user to toggle the photographs.";
+          break;
+      case "CSS":
+          pythonInfoDisplay.innerHTML = "";
+          webDevInfoDisplay.innerHTML = "Was applied for styling and layout, enhancing the visual appeal of the website.";
+          break;
+      case "Github":
+          pythonInfoDisplay.innerHTML = "";
+          webDevInfoDisplay.innerHTML = "Used to host the website, version control and documentation.";
+          break;
   }
-  // Add CSS class to the infoDisplay element
-  infoDisplay.classList.add('infoDisplayStyle');
 }
-
-
- 
