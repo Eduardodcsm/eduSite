@@ -89,13 +89,24 @@ button.btn:hover {
 }
 
 /* Information Display Area */
-#infoDisplay {
-  margin-top: auto;
-  padding: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.infoDisplay {
+  margin-top: 20px; /* Adjust as needed */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: all 0.3s ease; /* Smooth transition effect */
+  max-width: 600px; /* Limit width to maintain readability */
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* Hover effect */
+.infoDisplay:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
 
 /* Background Video */
 #background-video {
