@@ -1,90 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio" />
-    <meta name="author" content="Eduardo" />
-    <title>Eduardo's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-
-  </head>
-  <body>
-    <header>
-      <div class="site-header">
-        EDUARDO'S PORTFOLIO
-        <a
-          class="bi-list offcanvas-icon"
-          data-bs-toggle="offcanvas"
-          href="#offcanvasMenu"
-          role="button"
-          aria-controls="offcanvasMenu"
-        ></a>
-      </div>
-    </header>
-    <!-- Background Video -->
-    <div id="background-video">
-      <video autoplay loop muted playsinline class="back-video">
-        <source src="eduSite\Priviteweb\videos\video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Eduardo">
+  <title>Eduardo's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <h1>EDUARDO'S PORTFOLIO</h1>
+      <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
     </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#main">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Site created to showcase my progress.</p>
+
+    <!-- Python Skills Section -->
+    <section id="python-skills" class="skills-section">
+      <h3>Python</h3>
       <ul>
-        <li><a href="#main">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li onclick="showInfo('Python')">Python</li>
+        <li onclick="showInfo('Flask')">Flask</li>
       </ul>
-    </nav>
+    </section>
 
-    <!-- Main Content -->
-    <main id="main">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Site created to showcase my progress.</p>
+    <!-- Information Display Area for Python -->
+    <div id="python-infoDisplay" class="infoDisplay"></div>
 
-      <!-- Python Skills Section -->
-      <section id="python-skills" class="skills-section">
-        <h3>Python</h3>
-        <ul>
-          <li onclick="showInfo('Python')">Python</li>
-          <li onclick="showInfo('Flask')">Flask</li>
-        </ul>
-      </section>
+    <!-- Web Development Skills Section -->
+    <section id="web-dev-skills" class="skills-section">
+      <h3>Web Development</h3>
+      <p>This website was created as an assignment where the goal is to create a commercial website with a theme. The company's business was photography, and the theme is coffee.</p>
+      <button class="btn" onclick="location.href='CapturedCafe/home.html'">Visit CapturedCafe Website</button>
+      <ul>
+        <li onclick="showInfo('HTML')">HTML</li>
+        <li onclick="showInfo('JavaScript')">JavaScript</li>
+        <li onclick="showInfo('CSS')">CSS</li>
+        <li onclick="showInfo('Github')">Github</li>
+      </ul>
 
-      <!-- Information Display Area for Python -->
-      <div id="python-infoDisplay" class="infoDisplay"></div>
+      <!-- Information Display Area for Web Development -->
+      <div id="web-dev-infoDisplay" class="infoDisplay"></div>
+    </section>
+  </main>
 
-      <!-- Web Development Skills Section -->
-      <section id="web-dev-skills" class="skills-section">
-        <h3>Web Development</h3>
-        <p>
-          This website was created as an assignment where the goal is to create
-          a commercial website with a theme. The company's business was
-          photography, and the theme is coffee.
-        </p>
-        <button class="btn" onclick="location.href='CapturedCafe/home.html'">
-          Visit CapturedCafe Website
-        </button>
-        <ul>
-          <li onclick="showInfo('HTML')">HTML</li>
-          <li onclick="showInfo('JavaScript')">JavaScript</li>
-          <li onclick="showInfo('CSS')">CSS</li>
-          <li onclick="showInfo('Github')">Github</li>
-        </ul>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
+  </footer>
 
-        <!-- Information Display Area for Web Development -->
-        <div id="web-dev-infoDisplay" class="infoDisplay"></div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Eduardo's Portfolio. All rights reserved.</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-  
-  </body>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
 </html>
