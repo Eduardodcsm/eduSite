@@ -133,4 +133,13 @@ footer {
   .navbar ul li {
     margin: 0.5rem 0;
   }
+
+  /* Header for Cellphones */
+  header {
+    padding: 15px;
+  }
+
+  .site-header {
+    font-size: 1.25rem;
+  }
 }
