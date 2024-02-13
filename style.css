@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  margin: 0;
+  margin: 15;
   font-family: 'Roboto', Arial, sans-serif;
   background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
 }
@@ -18,6 +18,24 @@ header {
   margin-bottom: 0;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Dark gray text color */
+  margin-bottom: 20px; /* Space at the bottom of the paragraph */
+}
+
+
+
 /* Navigation Bar */
 .navbar {
   background-color: #333;
@@ -32,7 +50,6 @@ header {
   padding: 0;
   display: flex;
 }
-
 .navbar ul li {
   margin-left: 15px;
 }
@@ -100,8 +117,8 @@ button.btn:hover {
 
 /* Information Display Area */
 .infoDisplay {
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: 1.5rem; /* Adjusted margin */
+  padding: 1.5rem; /* Adjusted padding */
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -109,7 +126,7 @@ button.btn:hover {
 }
 
 .infoDisplay:hover {
-  transform: scale(1.03);
+  transform: scale(1.05); /* Increased scale on hover */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
