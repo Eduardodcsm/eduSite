@@ -1,10 +1,6 @@
 /* General Styles */
 body {
-<<<<<<< HEAD
-  margin: 25px;
-=======
-  margin: 15px;
->>>>>>> 3a5dd5ef8cded6f93df47971b216070aecf95a06
+  margin: 15px; /* Adjusted margin */
   font-family: 'Roboto', Arial, sans-serif;
   background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
   box-sizing: border-box; /* Added box-sizing */
@@ -13,7 +9,7 @@ body {
 /* Common font styles */
 h3,
 p {
-  font-family: 'Roboto', Arial, sans-serif; /* Corrected font family */
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -22,12 +18,8 @@ p {
 h3 {
   font-weight: bold;
   margin-top: 1.5rem;
-  margin-bottom: 1rem; /* Adjusted margin-bottom */
+  margin-bottom: 1rem;
   text-align: left;
-}
-
-p {
-  /* Removed margin-bottom */
 }
 
 /* Header */
@@ -125,29 +117,14 @@ button.btn:hover {
 
 /* Information Display Area */
 .infoDisplay {
-<<<<<<< HEAD
-  padding: 1.5rem;
-  background-color: #3498db; /* Changed background color */
-  color: white; /* Changed text color */
-=======
   margin-top: 1.5rem;
   padding: 1.5rem;
   background-color: #f0f0f0;
->>>>>>> 3a5dd5ef8cded6f93df47971b216070aecf95a06
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
-
-/* Footer */
-footer {
-  background-color: #333; /* Changed background color */
-  margin-top: 20px; /* Add space between footer and main content */
-
-  padding: 20px;
-  text-align: center;
-=======
 .infoDisplay:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -155,93 +132,29 @@ footer {
 
 /* Footer */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto; /* Adjusted height */
-  background-color: #d0daee;
-}
-
-/* Align the icons */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0; /* Adjusted margin */
-}
-
-/* Style all font awesome icons */
-.fa {
-  padding: 10px; /* Adjusted padding */
-  font-size: 24px; /* Adjusted font size */
+  background-color: #333;
+  padding: 20px;
   text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  width: auto; /* Adjusted width */
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-
-/* LinkedIn */
-.fa-linkedin {
-  background: #0077b5;
-  color: white;
-}
-
-/* Google+ */
-.fa-google-plus {
-  background: #dd4b39;
-  color: white;
-}
-
-/* Skype */
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-/* GitHub */
-.fa-github {
-  background: #333;
-  color: white;
->>>>>>> 3a5dd5ef8cded6f93df47971b216070aecf95a06
+  margin-top: 20px; /* Add space between footer and main content */
 }
 
 .footer-container {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: center;
   align-items: center;
 }
 
 .footer-social-links a {
-  margin: 0 10px; /* Add margin to space out the icons */
-  color: white; /* Set the color of the icons to white */
-  font-size: 24px; /* Increase font size for better visibility */
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
   text-decoration: none;
-  transition: color 0.3s; /* Add transition for smooth color change on hover */
+  transition: color 0.3s;
 }
 
 .footer-social-links a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff;
 }
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -254,7 +167,6 @@ footer {
     margin: 0.5rem 0;
   }
 
-  /* Header for Cellphones */
   header {
     padding: 15px;
   }

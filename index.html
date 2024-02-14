@@ -1,152 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio" />
-    <meta name="author" content="Eduardo" />
-    <title>Eduardo's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="site-header">
-        <h1>EDUARDO'S PORTFOLIO</h1>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Eduardo">
+  <title>Eduardo's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <h1>EDUARDO'S PORTFOLIO</h1>
+    </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="#main">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#main">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
 
-    <!-- Main Content -->
-    <main id="main">
-      <h2>Welcome to My Portfolio</h2>
-      <p>
-        I have developed this website to showcase my professional interests and
-        achievements. With a strong passion for machine learning, I have pursued
-        focused studies and project development to advance in this field.
-        Currently specializing in systems analysis, I bring over five years of
-        experience in data science to my work. Below, you'll find a selection of
-        projects I've completed through formal courses and independent study.
-      </p>
-      <!-- Skills Sections -->
-      <section class="skills-section">
-        <h3>This Website</h3>
-        <!-- Web Development Skills Section -->
-        <p>
-          To create this website, i used github, html, and css.
-        </p>
-        
+  <!-- Main Content -->
+  <main id="main">
+    <h2>Welcome to My Portfolio</h2>
+    <p>
+      I have developed this website to showcase my professional interests and
+      achievements. With a strong passion for machine learning, I have pursued
+      focused studies and project development to advance in this field.
+      Currently specializing in systems analysis, I bring over five years of
+      experience in data science to my work. Below, you'll find a selection of
+      projects I've completed through formal courses and independent study.
+    </p>
+    
+    <!-- Skills Sections -->
+    <section class="skills-section">
+      <h3>Skills</h3>
+
+      <!-- This Website Skills Section -->
+      <div id="website-skills">
+        <h4>This Website</h4>
+        <p>To create this website, I used GitHub, HTML, CSS, and JavaScript.</p>
         <ul>
           <li onclick="showInfo('GitHub')">GitHub</li>
           <li onclick="showInfo('HTML')">HTML</li>
           <li onclick="showInfo('CSS')">CSS</li>
           <li onclick="showInfo('JavaScript')">JavaScript</li>
         </ul>
+        <!-- Information Display Area for Website Development -->
+        <div id="website-infoDisplay" class="infoDisplay"></div>
+      </div>
+
+      <!-- Python Skills Section -->
+      <div id="python-skills">
+        <h4>Python</h4>
+        <ul>
+          <li onclick="showInfo('Python')">Python</li>
+          <li onclick="showInfo('Flask')">Flask</li>
+          <li onclick="showInfo('Django')">Django</li>
+          <li onclick="showInfo('GitHub')">GitHub</li>
+        </ul>
+        <!-- Information Display Area for Python -->
+        <div id="python-infoDisplay" class="infoDisplay"></div>
+      </div>
+
+      <!-- Web Development Skills Section -->
+      <div id="web-dev-skills">
+        <h4>Web Development</h4>
+        <p>
+          This website was created as an assignment where the goal is to
+          create a commercial website with a theme. The company's business was
+          photography, and the theme is coffee.
+        </p>
+        <button class="btn" onclick="location.href='CapturedCafe/home.html'">Visit CapturedCafe Website</button>
+        <ul>
+          <li onclick="showInfo('HTML')">HTML</li>
+          <li onclick="showInfo('JavaScript')">JavaScript</li>
+          <li onclick="showInfo('CSS')">CSS</li>
+          <li onclick="showInfo('GitHub')">GitHub</li>
+        </ul>
         <!-- Information Display Area for Web Development -->
         <div id="web-dev-infoDisplay" class="infoDisplay"></div>
       </div>
+    </section>
+  </main>
 
-        <!-- Python Skills Section -->
-        <div id="python-skills">
-          <h4>Python</h4>
-          <ul>
-            <li onclick="showInfo('Python')">Python</li>
-            <li onclick="showInfo('Flask')">Flask</li>
-            <li onclick="showInfo('Django')">Django</li>
-            <li onclick="showInfo('GitHub')">GitHub</li>
-          </ul>
-          <!-- Information Display Area for Python -->
-          <div id="python-infoDisplay" class="infoDisplay"></div>
-        </div>
-
-        <!-- Web Development Skills Section -->
-        <div id="web-dev-skills">
-          <h4>Web Development</h4>
-          <p>
-            This website was created as an assignment where the goal is to
-            create a commercial website with a theme. The company's business was
-            photography, and the theme is coffee.
-          </p>
-          <button class="btn" onclick="location.href='CapturedCafe/home.html'">
-            Visit CapturedCafe Website
-          </button>
-          <ul>
-            <li onclick="showInfo('HTML')">HTML</li>
-            <li onclick="showInfo('JavaScript')">JavaScript</li>
-            <li onclick="showInfo('CSS')">CSS</li>
-            <li onclick="showInfo('GitHub')">GitHub</li>
-          </ul>
-          <!-- Information Display Area for Web Development -->
-          <div id="web-dev-infoDisplay" class="infoDisplay"></div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-<<<<<<< HEAD
-    <footer>
-      <div class="footer-container">
-        <div class="footer-social-links">
-          <!-- Add appropriate links to your social media accounts -->
-          <a
-            href="https://www.youtube.com/your-youtube-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="YouTube"
-            class="bi bi-youtube"
-          ></a>
-          <a
-            href="https://github.com/your-github-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="GitHub"
-            class="bi bi-github"
-          ></a>
-          <a
-            href="https://www.linkedin.com/your-linkedin-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-            class="bi bi-linkedin"
-          ></a>
-        </div>
-        <p>© 2023 Eduardo's Portfolio. All rights reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-social-links">
+        <!-- Add appropriate links to your social media accounts -->
+        <a href="https://www.youtube.com/your-youtube-link" target="_blank" rel="noopener noreferrer" title="YouTube" class="bi bi-youtube"></a>
+        <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" title="GitHub" class="bi bi-github"></a>
+        <a href="https://www.linkedin.com/your-linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="bi bi-linkedin"></a>
       </div>
-    </footer>
-=======
-<footer class="footer">
-  <div class="container text-center">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-    <a href="#" class="fa fa-google-plus"></a>
-    <a href="#" class="fa fa-skype"></a>
-    <a href="#" class="fa fa-github"></a>
-  </div>
-<div class="container">
-  <a href="#" class="fa fa-facebook-f"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-linkedin-in"></a>
-  <a href="#" class="fa fa-google-plus-g"></a>
-  <a href="#" class="fa fa-skype"></a>
-  <a href="#" class="fa fa-github"></a>
-</div>
-</footer>
+      <p>© 2023 Eduardo's Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
 
->>>>>>> 3a5dd5ef8cded6f93df47971b216070aecf95a06
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <!-- Add Bootstrap JS script here if you're using Bootstrap -->
-  </body>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <!-- Add Bootstrap JS script here if you're using Bootstrap -->
+</body>
 </html>
