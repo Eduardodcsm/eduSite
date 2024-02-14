@@ -1,11 +1,33 @@
 /* General Styles */
+
 body {
-  margin: 15;
+  margin: 15px; /* Added a unit */
   font-family: 'Roboto', Arial, sans-serif;
   background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
 }
 
+/* Common font styles */
+h3,
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Dark gray text color */
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 20px; /* Space at the bottom of the paragraph */
+}
+
 /* Header */
+
 header {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -18,25 +40,8 @@ header {
   margin-bottom: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333; /* Dark gray text color */
-  margin-bottom: 20px; /* Space at the bottom of the paragraph */
-}
-
-
-
 /* Navigation Bar */
+
 .navbar {
   background-color: #333;
   padding: 10px;
@@ -50,6 +55,7 @@ p {
   padding: 0;
   display: flex;
 }
+
 .navbar ul li {
   margin-left: 15px;
 }
@@ -72,6 +78,7 @@ p {
 }
 
 /* Button style */
+
 button.btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -89,6 +96,7 @@ button.btn:hover {
 }
 
 /* Skills Sections */
+
 .skills-section {
   margin-top: 1rem;
 }
@@ -116,6 +124,7 @@ button.btn:hover {
 }
 
 /* Information Display Area */
+
 .infoDisplay {
   margin-top: 1.5rem; /* Adjusted margin */
   padding: 1.5rem; /* Adjusted padding */
@@ -131,6 +140,7 @@ button.btn:hover {
 }
 
 /* Footer */
+
 /* Style all font awesome icons */
 .fa {
   padding: 20px;
@@ -183,8 +193,8 @@ button.btn:hover {
   color: white;
 }
 
-
 /* Media Queries */
+
 @media screen and (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
