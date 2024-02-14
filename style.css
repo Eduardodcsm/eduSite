@@ -55,7 +55,6 @@ header {
   color: #007bff;
 }
 
-
 /* Navigation Bar */
 .navbar {
   background-color: #333;
@@ -149,9 +148,10 @@ button.btn:hover {
 .infoDisplay:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 /* Footer */
 .footer {
-  background-color: #333;
+  background-color: #000000;
   padding: 20px;
   text-align: center;
   margin-top: 20px; /* Add space between footer and main content */
@@ -163,16 +163,43 @@ button.btn:hover {
   align-items: center;
 }
 
-.footer-social-links a {
-  margin: 0 10px;
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-  transition: color 0.3s;
+/* Social media icons */
+.icons {
+  display: flex; /* Icons display in a row */
+  justify-content: center; /* Center the icons horizontal */
+  align-items: center; /* Center the icons vertical */
+  margin: 20px; /* Icons margin */
+}
+/* Style each icon link */
+.icons a {
+  margin: 10px; /* Add some margin around each icon link */
+  text-decoration: none; /* Remove the underline from each icon link */
+}
+/* Style each icon */
+.icons i {
+  font-size: 40px; /* font size of each icon */
+  color: #333; /* Change the color of each icon to dark gray */
+  transition: color 0.3s; /* Add a smooth transition effect to the color of each icon */
 }
 
-.footer-social-links a:hover {
-  color: #007bff;
+/* Change the color of each icon on hover to match their brand colors */
+.icons i.bi.bi-linkedin:hover {
+  color: #0e76a8; /* LinkedIn brand color */
+}
+.icons i.bi.bi-github:hover {
+  color: #211f1f; /* GitHub brand color */
+}
+.icons i.bi.bi-youtube:hover {
+  color: #ff0000; /* YouTube brand color */
+}
+.icons i.bi.bi-twitter:hover {
+  color: #1da1f2; /* Twitter brand color */
+}
+.icons i.bi.bi-reddit:hover {
+  color: #ff4500; /* Reddit brand color */
+}
+.icons i.bi.bi-instagram:hover {
+  color: #e1306c; /* Instagram brand color */
 }
 
 /* Media Queries */
