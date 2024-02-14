@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  margin: 15;
+  margin: 25px;
   font-family: 'Roboto', Arial, sans-serif;
   background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
 }
@@ -18,24 +18,6 @@ header {
   margin-bottom: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333; /* Dark gray text color */
-  margin-bottom: 20px; /* Space at the bottom of the paragraph */
-}
-
-
-
 /* Navigation Bar */
 .navbar {
   background-color: #333;
@@ -50,6 +32,7 @@ p {
   padding: 0;
   display: flex;
 }
+
 .navbar ul li {
   margin-left: 15px;
 }
@@ -117,28 +100,41 @@ button.btn:hover {
 
 /* Information Display Area */
 .infoDisplay {
-  margin-top: 1.5rem; /* Adjusted margin */
-  padding: 1.5rem; /* Adjusted padding */
-  background-color: #f0f0f0;
+  padding: 1.5rem;
+  background-color: #3498db; /* Changed background color */
+  color: white; /* Changed text color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
 }
 
-.infoDisplay:hover {
-  transform: scale(1.05); /* Increased scale on hover */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 0.5rem;
+  background-color: #333; /* Changed background color */
+  margin-top: 20px; /* Add space between footer and main content */
+
+  padding: 20px;
   text-align: center;
-  font-size: 0.8rem;
-  margin-top: 1rem;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+}
+
+.footer-social-links a {
+  margin: 0 10px; /* Add margin to space out the icons */
+  color: white; /* Set the color of the icons to white */
+  font-size: 24px; /* Increase font size for better visibility */
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition for smooth color change on hover */
+}
+
+.footer-social-links a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
