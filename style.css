@@ -27,6 +27,7 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px;
+  position: relative; /* Add position relative */
 }
 
 .site-header {
@@ -34,6 +35,26 @@ header {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
+
+.header-social-links {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust the position as needed */
+  transform: translateY(-50%);
+}
+
+.header-social-links a {
+  margin-left: 10px; /* Adjust spacing between icons */
+  color: white;
+  font-size: 20px; /* Adjust font size */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-social-links a:hover {
+  color: #007bff;
+}
+
 
 /* Navigation Bar */
 .navbar {
@@ -126,10 +147,8 @@ button.btn:hover {
 }
 
 .infoDisplay:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
-
 /* Footer */
 .footer {
   background-color: #333;
@@ -158,20 +177,7 @@ button.btn:hover {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ul li {
-    margin: 0.5rem 0;
-  }
-
-  header {
-    padding: 15px;
-  }
-
-  .site-header {
-    font-size: 1.25rem;
+  .footer-social-links a {
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 }
