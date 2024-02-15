@@ -27,17 +27,17 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <ul>
-        <li><a href="#main">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
+      <div class="tool-usage-container">
+        <button class="btn" onclick="toggleSkillsList()">Tools Used</button>
+        <div id="tool-usage-display"></div>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <main id="main">
       <h2>Welcome to My Portfolio</h2>
       <p>
-        I have developed this website to showcase my professional interests and
+        Developing this website to showcase my professional interests and
         achievements. With a strong passion for machine learning, I have pursued
         focused studies and project development to advance in this field.
         Currently specializing in systems analysis, I bring over five years of
@@ -53,14 +53,9 @@
           <p>
             To create this website, I used GitHub, HTML, CSS, and JavaScript.
           </p>
-          <ul>
-            <li onclick="showInfo('GitHub')">GitHub</li>
-            <li onclick="showInfo('HTML')">HTML</li>
-            <li onclick="showInfo('CSS')">CSS</li>
-            <li onclick="showInfo('JavaScript')">JavaScript</li>
-          </ul>
+          
           <!-- Information Display Area for Website Development -->
-          <div id="website-infoDisplay" class="infoDisplay"></div>
+          <!-- <div id="website-infoDisplay" class="infoDisplay"></div> -->
         </div>
 
         <!-- Python Skills Section -->
@@ -73,7 +68,7 @@
             <li onclick="showInfo('GitHub')">GitHub</li>
           </ul>
           <!-- Information Display Area for Python -->
-          <div id="python-infoDisplay" class="infoDisplay"></div>
+          <!-- <div id="python-infoDisplay" class="infoDisplay"></div> -->
         </div>
 
         <!-- Web Development Skills Section -->
@@ -94,7 +89,7 @@
             <li onclick="showInfo('GitHub')">GitHub</li>
           </ul>
           <!-- Information Display Area for Web Development -->
-          <div id="web-dev-infoDisplay" class="infoDisplay"></div>
+          <!-- <div id="web-dev-infoDisplay" class="infoDisplay"></div> -->
         </div>
       </section>
     </main>
@@ -103,16 +98,18 @@
     <footer class="footer">
       <!-- Icons -->
       <div class="icons">
-        <a href="https://www.linkedin.com/in/educs/"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/Eduardodcsm/eduSite"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/educs/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="https://github.com/Eduardodcsm/eduSite"
+          ><i class="bi bi-github"></i
+        ></a>
         <a href="https://youtu.be/NSKIp-inLtw"><i class="bi bi-youtube"></i></a>
         <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
         <a href="https://www.reddit.com"><i class="bi bi-reddit"></i></a>
         <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
       </div>
     </footer>
-    
-
     <!-- Scripts -->
     <script src="script.js"></script>
     <!-- Add Bootstrap JS script here if you're using Bootstrap -->
