@@ -1,24 +1,3 @@
-/* General Styles */
-body {
-  margin: 15px;
-  font-family: 'Roboto', Arial, sans-serif;
-  background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
-  box-sizing: border-box;
-}
-
-/* Common font styles */
-h3, p {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
-h3 {
-  font-weight: bold;
-  margin: 1.5rem 0 1rem;
-  text-align: left;
-}
 
 /* Header */
 header {
@@ -26,6 +5,8 @@ header {
   text-align: center;
   padding: 20px;
   position: relative;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .site-header {
@@ -34,7 +15,25 @@ header {
   margin-bottom: 0;
 }
 
-/* Navigation Bar */
+/* Body Styles */
+body {
+  margin: 15px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: url('https://source.unsplash.com/time-lapse-photography-of-tunnel-sb7RUrRMaC4') no-repeat center center/cover;
+  box-sizing: border-box;
+}
+
+/* Header and Paragraph Styles */
+h3, p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #f1f4f26b;
+
+}
+
+/* Navigation Bar Styles */
 .navbar {
   background-color: #333;
   padding: 10px;
@@ -44,6 +43,7 @@ header {
   align-items: center;
 }
 
+/* Navigation Bar List Styles */
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -72,7 +72,24 @@ header {
   background-color: #555;
 }
 
-/* Button style */
+/* Skills Section Paragraph Styles */
+.skills-section p {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #000000; /* Text color */
+  line-height: 1.6; /* Adjust the line height for readability */
+  margin-bottom: 15px; /* Add bottom margin for spacing */
+}
+
+/* Skills Section List Item Styles */
+.skills-section li {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #000000; /* Text color */
+  line-height: 1.4; /* Adjust the line height for readability */
+  margin-bottom: 8px; /* Add bottom margin for spacing */
+}
+
+
+/* Button Styles */
 button.btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -89,34 +106,7 @@ button.btn:hover {
   background-color: #2980b9;
 }
 
-/* Skills Sections */
-.skills-section {
-  margin-top: 1rem;
-}
-
-.skills-section ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.5rem;
-}
-
-.skills-section ul li {
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  background-color: #3498db;
-  color: #fff;
-  margin: 0.25rem;
-  transition: background-color 0.3s;
-}
-
-.skills-section ul li:hover {
-  background-color: #2980b9;
-}
-
-/* Footer */
+/* Footer Styles */
 .footer {
   background-color: #000000;
   padding: 20px;
@@ -130,7 +120,7 @@ button.btn:hover {
   align-items: center;
 }
 
-/* Social media icons */
+/* Social Media Icon Styles */
 .icons {
   display: flex;
   justify-content: center;
@@ -141,13 +131,12 @@ button.btn:hover {
 /* Style each icon link */
 .icons a {
   margin: 10px;
-  text-decoration: none;
 }
 
 /* Style each icon */
 .icons i {
   font-size: 40px;
-  color: #333;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
@@ -171,7 +160,7 @@ button.btn:hover {
   color: #e1306c;
 }
 
-/* Media Queries */
+/* Media Queries Styles */
 @media screen and (max-width: 768px) {
   .footer-social-links a {
     font-size: 20px;
@@ -198,7 +187,7 @@ button.btn:hover {
   align-items: center;
 }
 
-/* Button style */
+/* Button Styles */
 button.btn-green {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -231,7 +220,7 @@ button.btn-blue:hover {
   background-color: #2980b9; /* Darker shade of blue */
 }
 
-/* CSS for the tool information display */
+/* Tool Information Display Styles */
 #tool-usage-display {
   display: none;
   background-color: #fff; /* White background */

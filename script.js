@@ -1,43 +1,3 @@
-/*// Function to display skills information
-function showInfo(skill) {
-  // Get references to information display areas
-  var pythonInfoDisplay = document.getElementById("python-infoDisplay");
-  var webDevInfoDisplay = document.getElementById("web-dev-infoDisplay");
-
-  // Display information based on the selected skill
-  switch (skill) {
-      case "Python":
-          pythonInfoDisplay.innerHTML = "Python information: ...";
-          webDevInfoDisplay.innerHTML = "";
-          break;
-      case "Flask":
-          pythonInfoDisplay.innerHTML = "Flask information: ...";
-          webDevInfoDisplay.innerHTML = "";
-          break;
-      case "HTML":
-          pythonInfoDisplay.innerHTML = "";
-          webDevInfoDisplay.innerHTML = "HTML was used to create and structure the content of the website. It facilitated the creation of 4 pages.";
-          break;
-      case "JavaScript":
-          pythonInfoDisplay.innerHTML = "";
-          webDevInfoDisplay.innerHTML = "JavaScript enabled functionalities such as the contact form and gallery, allowing users to interact with the website.";
-          break;
-      case "CSS":
-          pythonInfoDisplay.innerHTML = "";
-          webDevInfoDisplay.innerHTML = "CSS was applied for styling and layout, enhancing the visual appeal and user experience of the website.";
-          break;
-      case "GitHub":
-          pythonInfoDisplay.innerHTML = "";
-          webDevInfoDisplay.innerHTML = "GitHub was used for hosting the website, version control, and documentation purposes.";
-          break;
-      default:
-          // Handle unknown skill
-          pythonInfoDisplay.innerHTML = "Information not available for this skill.";
-          webDevInfoDisplay.innerHTML = "";
-          break;
-  }
-}
-*/
 // Function to display information based on the selected tool
 function toggleSkillsList() {
   var skillsList = document.getElementById("tool-usage-display");
@@ -72,7 +32,8 @@ function showInfo(toolName) {
       message = "GitHub was used for version control and collaboration.";
       break;
     case "Visual Studio Code":
-      message = "Visual Studio Code was used to edit and organize files like HTML, CSS, and JavaScript.";
+      message =
+        "Visual Studio Code was used to edit and organize files like HTML, CSS, and JavaScript.";
       break;
     case "Python":
       message = "Python was used for scripting and backend development.";
@@ -84,7 +45,8 @@ function showInfo(toolName) {
       message = "CSS was used for styling the web pages.";
       break;
     case "JavaScript":
-      message = "JavaScript was used for client-side scripting and interactivity.";
+      message =
+        "JavaScript was used for client-side scripting and interactivity.";
       break;
     case "Java":
       message = "Java was used for backend development and application logic.";
