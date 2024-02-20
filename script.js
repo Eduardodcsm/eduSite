@@ -1,63 +1,41 @@
+// Data for tools and their descriptions
+const toolsData = [
+  { name: "GitHub", description: "GitHub was used for version control and collaboration." },
+  { name: "Visual Studio Code", description: "Visual Studio Code was used to edit and organize files like HTML, CSS, and JavaScript." },
+  { name: "Python", description: "Python was used for scripting and backend development." },
+  { name: "HTML", description: "HTML was used for structuring the content of web pages." },
+  { name: "CSS", description: "CSS was used for styling the web pages." },
+  { name: "JavaScript", description: "JavaScript was used for client-side scripting and interactivity." },
+  { name: "Java", description: "Java was used for backend development and application logic." },
+  { name: "SQL", description: "SQL was used for database management and querying." }
+];
+
 // Function to display information based on the selected tool
 function toggleSkillsList() {
-  var skillsList = document.getElementById("tool-usage-display");
-  var isVisible = skillsList.style.display === "block";
+  const skillsList = document.getElementById("tool-usage-display");
+  const isVisible = skillsList.style.display === "block";
 
   if (!isVisible) {
-    skillsList.innerHTML = `
-      
-      <ul>
-        <li onclick="showInfo('GitHub')">GitHub</li>
-        <li onclick="showInfo('Visual Studio Code')">Visual Studio Code</li>
-        <li onclick="showInfo('Python')">Python</li>
-        <li onclick="showInfo('HTML')">HTML</li>
-        <li onclick="showInfo('CSS')">CSS</li>
-        <li onclick="showInfo('JavaScript')">JavaScript</li>
-        <li onclick="showInfo('Java')">Java</li>
-        <li onclick="showInfo('SQL')">SQL</li>
-      </ul>
-    `;
+    const listHTML = "<ul>" + toolsData.map(tool => `<li data-tool="${tool.name}">${tool.name}</li>`).join("") + "</ul>";
+    skillsList.innerHTML = listHTML;
     skillsList.style.display = "block"; // Show the list
+
+    skillsList.addEventListener("click", handleToolClick);
   } else {
     skillsList.style.display = "none"; // Hide the list
+    skillsList.removeEventListener("click", handleToolClick);
   }
 }
 
-function showInfo(toolName) {
-  var toolInfoDisplay = document.getElementById("tool-usage-display");
-  var message;
+// Function to handle click event on tool items
+function handleToolClick(event) {
+  if (event.target.tagName === "LI") {
+    const toolName = event.target.dataset.tool;
+    const toolInfoDisplay = document.getElementById("tool-usage-display");
+    const tool = toolsData.find(tool => tool.name === toolName);
+    const message = tool ? tool.description : "Usage information not available.";
 
-  switch (toolName) {
-    case "GitHub":
-      message = "GitHub was used for version control and collaboration.";
-      break;
-    case "Visual Studio Code":
-      message =
-        "Visual Studio Code was used to edit and organize files like HTML, CSS, and JavaScript.";
-      break;
-    case "Python":
-      message = "Python was used for scripting and backend development.";
-      break;
-    case "HTML":
-      message = "HTML was used for structuring the content of web pages.";
-      break;
-    case "CSS":
-      message = "CSS was used for styling the web pages.";
-      break;
-    case "JavaScript":
-      message =
-        "JavaScript was used for client-side scripting and interactivity.";
-      break;
-    case "Java":
-      message = "Java was used for backend development and application logic.";
-      break;
-    case "SQL":
-      message = "SQL was used for database management and querying.";
-      break;
-    default:
-      message = "Usage information not available.";
+    toolInfoDisplay.innerHTML = "<p>" + message + "</p>";
+    toolInfoDisplay.style.display = "block"; // Make the info display visible
   }
-
-  toolInfoDisplay.innerHTML = "<p>" + message + "</p>";
-  toolInfoDisplay.style.display = "block"; // Make the info display visible
 }

@@ -42,6 +42,9 @@ h3, p {
   overflow: hidden;
   align-items: center;
 }
+.navbar button {
+  background-color: #33bbff;
+}
 
 /* Navigation Bar List Styles */
 .navbar ul {
