@@ -1,10 +1,11 @@
- 
-  .box {
+.box {
+    display: inline-block;
     background: white;
     padding: 16px 24px;
     position: relative;
     border-radius: 8px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+
   }
   .box::after {
     position: absolute;
@@ -50,5 +51,5 @@
     100% {
       background-position: 200% 50%;
     }
-  }  
+  }
   
