@@ -1,4 +1,11 @@
- 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #999;
+  }
+  
   .box {
     background: white;
     padding: 16px 24px;
@@ -51,4 +58,3 @@
       background-position: 200% 50%;
     }
   }  
-  
