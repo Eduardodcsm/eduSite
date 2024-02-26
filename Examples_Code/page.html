@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examples</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <div class="box">Hello world!</div>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to the Interactive Website Demo</h2>
+      <p>Explore the various features and effects on this page.</p>
+      <button>Learn More</button>
+    </section>
+    <section class="features">
+      <h2>Powerful Features</h2>
+      <div class="features-grid">
+        <article>
+          <h3>Feature 1</h3>
+          <p>Detailed description of feature 1.</p>
+        </article>
+        <article>
+          <h3>Feature 2</h3>
+          <p>Detailed description of feature 2.</p>
+        </article>
+        <article>
+          <h3>Feature 3</h3>
+          <p>Detailed description of feature 3.</p>
+        </article>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>What People Say</h2>
+      <div class="testimonials-carousel">
+        <div class="testimonial fade">
+          <p>"This website is amazing! It's easy to use and has all the features I need."</p>
+          <span class="client">- John Doe, Client</span>
+        </div>
+        <div class="testimonial fade">
+          <p>"I'm impressed with the performance and user-friendliness of this website."</p>
+          <span class="client">- Jane Doe, Customer</span>
+        </div>
+        </div>
+    </section>
+    <section class="cta">
+      <h2>Call to Action</h2>
+      <p>Sign up for our newsletter today and stay updated!</p>
+      <form action="/subscribe" method="post">
+        <input type="email" name="email" placeholder="Enter your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Website</p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms and Conditions</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
